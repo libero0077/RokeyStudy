@@ -1,18 +1,7 @@
-# 
-
-## Outline
-
-다음과 같은 활동을 주로 진행합니다
-- 코드 리뷰
-  - 코드 구조 분석
-  - 보다 효율적인 방안 논의
-- 개념 심화 학습
-  - ex) 각 인공신경망의 key concept 이해, ROS2에서 사용되는 토픽/서비스/액션 이해 등
-
 <h1 align="center"> :fire: DOOSAN ROKEY STUDY :fire: </h1> 
 </br>
 
-<p align="center"> <img src="https://www.thedroidsonroids.com/wp-content/uploads/2016/02/Rx_Logo_M-390x390.png" width="150"> </p>
+<p align="center"> <img src="https://github.com/user-attachments/assets/bc50b7a6-fc46-4d2e-8813-bed0d22bd88d" width="350"> </p>
 
 </br>
 
@@ -38,8 +27,10 @@
 
 | Week | Subject                                               | Presenter                                                    |
 | ---- | ----------------------------------------------------- | ------------------------------------------------------------ |
-| 1    | [Sorting_recycling](ComputerVision/week1.md)                           | [libero0077](https://github.com/libero0077)              |
-| 2    | [CCTV_with_ssd_basic](ComputerVision/week2.md)                             | [pedrala](https://github.com/pedrala)              |
-| 3    | [CCTV_with_ssd_advanced](ComputerVision/week3_ssd.md)                                  | [Sangmin-Jeon](https://github.com/Sangmin-Jeon)              |
-| 3    | [CCTV_with_yolo_basic](ComputerVision/week3_yolo.md)                       | [ynu09](https://github.com/ynu09)                        |
-| 5    | [CCTV_with_yolo_advanced_YOLOv4_vs_YOLOv7]                              | [idingg](https://github.com/idingg)                         |
+| 1    | [Sorting_recycling](ComputerVision/week1.md)          | [libero0077](https://github.com/libero0077)                  |
+| 2    | [CCTV_with_ssd_basic](ComputerVision/week2.md)        | [pedrala](https://github.com/pedrala)                        |
+| 3    | [CCTV_with_ssd_advanced](ComputerVision/week3_ssd.md) | [Sangmin-Jeon](https://github.com/Sangmin-Jeon)              |
+|      | [CCTV_with_yolo_basic](ComputerVision/week3_yolo.md)  | [ynu09](https://github.com/ynu09)                            |
+| 4    | [Ready_to_ROS2](ROS2/week4.md)                        |                                                              |
+| 5    | CCTV_with_yolo_advanced_YOLOv4_vs_YOLOv7              | [idingg](https://github.com/idingg)                          |
+| 6    | ROS2&Topic_Programming                                | [Sangmin-Jeon](https://github.com/Sangmin-Jeon)              |

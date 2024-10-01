@@ -1,12 +1,36 @@
-# Chap5: 이미지 분류를 활용한 재활용품 분류 프리뷰
-# 인공신경망 구조 중심의 학습
-# 코드리뷰 및 개선방안 공유
+## ready
 
-## Model code review
+#### 구글 드라이브 마운트
 
-### Dataset_Class.py
-데이터셋을 불러오고 전처리
+```bash
+from google.colab import drive
+drive.mount('/content/drive')
+```
 
+#### 깃허브 다운로드
+```bash
+!git clone https://github.com/jetsonai/DeepLearning4Projects
+```
+
+#### Data Download
+###### 데이터셋 내려받기
+```bash
+!git clone https://github.com/jetsonai/Recycle_Classification_Dataset
+
+!rm -rf ./Recycle_Classification_Dataset/.git # git folder 삭제
+```
+#### 설치 확인
+```bash
+!ls
+```
+
+## Chap5: 이미지 분류를 활용한 재활용품 분류
+
+### Model code review
+
+#### Dataset_Class.py
+###### 데이터셋을 불러오고 전처리
+```bash
 import os # 경로명을 쉽게 다루기 위해 사용
 from torch.utils.data import Dataset # 파이토치에서 심층 신경망을 학습할 때 다루는 데이터세트 클래스. 이 클래스를 상속받아 커스텀 데이터클래스 제작
 import torchvision.transforms as transforms # 이미지 데이터를 읽고 심층 신경망을 학습하기 위해 입력할 때 사용하는 데이터 전처리 클래스
@@ -83,11 +107,11 @@ class PyTorch_Classification_Dataset_Class(Dataset):
 
     def __num_classes__(self): # 전체 클래스 수 추출. 학습 과정에 사용
         return len(self.label_list)
+```
 
-
-### Model_Class_From_the_Scratch.py
-신경망 정의
-
+#### Model_Class_From_the_Scratch.py
+###### 신경망 정의
+```bash
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -148,10 +172,11 @@ class MODEL_From_Scratch(nn.Module):
 
     def forward(self, x): # 정의한 계산 수행 후 결과 반환
         return self.classifier(x)
+```
 
-### PyTorch_Transfer_Learning_MobileNet.py
-MobileNet v2를 이용한 전이학습
-
+#### PyTorch_Transfer_Learning_MobileNet.py
+###### MobileNet v2를 이용한 전이학습
+```bash
 import torch
 from torchvision import models
 import torch.nn as nn
@@ -171,10 +196,11 @@ class MobileNet(nn.Module): # MobileNet v2 를 이용한 전이학습. ImageNet 
         x = self.network(x)
         x = self.classifier(x)
         return x
+```
 
-### Training_Class.py
-실제 훈련을 진행
-
+#### Training_Class.py
+###### 실제 훈련을 진행
+```bash
 import os
 import torch
 import torch.optim as optim
@@ -324,40 +350,103 @@ if __name__ == "__main__":
     training_class = PyTorch_Classification_Training_Class()
     training_class.prepare_network(True)
     training_class.training_network()
+```
 
+### Start experiment
 
-## Start experiment
-
-### Object creation
-모델 객체 만들기
-
-오류 발생. Syntax 수정
-
+#### Object creation
+###### 모델 객체 만들기
+###### 오류 발생. Syntax 수정
+```bash
 from DeepLearning4Projects.Chap5.Training_Class import PyTorch_Classification_Training_Class
 training_class = PyTorch_Classification_Training_Class()
+```
+/content/DeepLearning4Projects/Chap5/Dataset_Class.py:50: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if image.mode is not "RGB":
 
+```bash
 from DeepLearning4Projects.Chap5.Training_Class import PyTorch_Classification_Training_Class
 training_class = PyTorch_Classification_Training_Class()
+```
 
-
-### Custom learning
-
+#### Custom learning
+```bash
 print("Learning from scratch")
 
 training_class.prepare_network(True)
 training_class.training_network(learning_rate=0.0001, epochs=10, step_size=3, gamma=0.3)
+```
+Learning from scratch  
+100%|██████████| 442/442 [06:01<00:00,  1.22it/s]  
+100%|██████████| 148/148 [01:58<00:00,  1.25it/s]  
+[1] Test Loss: 1.2109, Accuracy: 52.61%  
+model saved!  
+100%|██████████| 442/442 [05:40<00:00,  1.30it/s]  
+100%|██████████| 148/148 [01:56<00:00,  1.27it/s]  
+[2] Test Loss: 1.2038, Accuracy: 52.82%  
+model saved!  
+100%|██████████| 442/442 [05:43<00:00,  1.29it/s]  
+100%|██████████| 148/148 [01:54<00:00,  1.29it/s]  
+[3] Test Loss: 1.1729, Accuracy: 56.09%  
+model saved!  
+100%|██████████| 442/442 [05:54<00:00,  1.25it/s]  
+100%|██████████| 148/148 [01:56<00:00,  1.27it/s]  
+[4] Test Loss: 1.1675, Accuracy: 56.22%  
+model saved!  
+100%|██████████| 442/442 [05:51<00:00,  1.26it/s]  
+100%|██████████| 148/148 [01:58<00:00,  1.25it/s]  
+[5] Test Loss: 1.1575, Accuracy: 57.96%  
+model saved!  
+100%|██████████| 442/442 [05:42<00:00,  1.29it/s]  
+100%|██████████| 148/148 [01:55<00:00,  1.28it/s]  
+[6] Test Loss: 1.1519, Accuracy: 58.47%  
+model saved!  
+100%|██████████| 442/442 [05:49<00:00,  1.26it/s]  
+100%|██████████| 148/148 [02:00<00:00,  1.22it/s]  
+[7] Test Loss: 1.1472, Accuracy: 59.53%  
+model saved!  
+100%|██████████| 442/442 [05:46<00:00,  1.27it/s]  
+100%|██████████| 148/148 [01:55<00:00,  1.29it/s]  
+[8] Test Loss: 1.1488, Accuracy: 58.90%  
+100%|██████████| 442/442 [05:50<00:00,  1.26it/s]  
+100%|██████████| 148/148 [01:55<00:00,  1.28it/s]  
+[9] Test Loss: 1.1515, Accuracy: 58.85%  
+100%|██████████| 442/442 [05:39<00:00,  1.30it/s]  
+100%|██████████| 148/148 [01:53<00:00,  1.30it/s][10] Test Loss: 1.1421, Accuracy: 59.02%  
+model saved!  
 
-### Transfer learning
 
+#### Transfer learning
+```bash
 print("Transfer Learning")
 
 training_class.prepare_network(False)
 training_class.training_network(learning_rate=0.0001, epochs=3, step_size=3, gamma=0.3)
+```
+Transfer Learning  
+/usr/local/lib/python3.10/dist-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(  
+/usr/local/lib/python3.10/dist-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=MobileNet_V2_Weights.IMAGENET1K_V1`. You can also use `weights=MobileNet_V2_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)  
+Downloading: "https://download.pytorch.org/models/mobilenet_v2-b0353104.pth" to /root/.cache/torch/hub/checkpoints/mobilenet_v2-b0353104.pth  
+100%|██████████| 13.6M/13.6M [00:00<00:00, 205MB/s]  
+100%|██████████| 442/442 [05:57<00:00,  1.24it/s]  
+100%|██████████| 148/148 [01:56<00:00,  1.27it/s]  
+[1] Test Loss: 0.7960, Accuracy: 95.07%  
+model saved!  
+100%|██████████| 442/442 [05:55<00:00,  1.24it/s]  
+100%|██████████| 148/148 [01:52<00:00,  1.32it/s]  
+[2] Test Loss: 0.7847, Accuracy: 96.14%  
+model saved!  
+100%|██████████| 442/442 [06:12<00:00,  1.19it/s]  
+100%|██████████| 148/148 [01:58<00:00,  1.25it/s][3] Test Loss: 0.7709, Accuracy: 97.37%  
+model saved!  
 
-### Inference
-이미지를 불러와 추론결과 확인
-* 경고 메세지는 추후 torch.load 함수의 weights_only 파라미터의 기본값이 True로 변경될 것임을 알려줌. weights_only=False로 명시적으로 전달하면 출력되지 않을 듯.
 
+#### Inference
+###### 이미지를 불러와 추론결과 확인
+###### * 경고 메세지는 추후 torch.load 함수의 weights_only 파라미터의 기본값이 True로 변경될 것임을 알려줌. weights_only=False로 명시적으로 전달하면 출력되지 않을 듯.
+```bash
 # Colab에서 OpenCV 이미지를 보기 위한 패키지를 불러옵니다.
 import cv2
 import numpy as np
@@ -395,3 +484,10 @@ input_image_path = "/content/DeepLearning4Projects/Chap5/test_image_1.jpg"
 #input_image_path = "/content/DeepLearning4Projects/Chap5/test_image_2.jpg"
 
 result = inference(input_image_path)
+```
+/content/DeepLearning4Projects/Chap5  
+/content/DeepLearning4Projects/Chap5/Inference_Cam.py:36: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.model.load_state_dict(torch.load(model_str, map_location=self.DEVICE))  
+/content  
+입력 이미지는 96.46574 % 확률로 can으로 분류됩니다.
+![image](https://github.com/user-attachments/assets/f38d5605-7b09-4325-a49e-121d4efc749d)

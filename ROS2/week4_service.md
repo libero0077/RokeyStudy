@@ -239,3 +239,8 @@ calculate_given_formula 함수로 인수 a, b를 가지고 주어진 연산자 o
         return self.argument_result  # 연산 결과 반환
 
 ```
+
+서비스 프로그래밍 참고자료
+------------------------
+
+https://rb2023ros.github.io/kr/ros2_foxy/lecture8/

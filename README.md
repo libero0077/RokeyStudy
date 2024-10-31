@@ -36,4 +36,4 @@
 | 5    | [ROS2&Topic_Programming](ROS2/week5_ROS2&Topic_Programming.md)                                | [Sangmin-Jeon](https://github.com/Sangmin-Jeon)              |
 | 5    | [Service_Programming](ROS2/week5_service.md)          | [pedrala](https://github.com/pedrala)                        |
 | 5    | [Action_Programming](ROS2/week5_Action_Programming.md)| [libero0077](https://github.com/libero0077)                  |
-| 5    | [ROS2_Test_Prep](ROS2/week6)                          | [everyone]                                                   |
+| 6    | [ROS2_Test_Prep](ROS2/week6)                          | [everyone]                                                   |

@@ -33,11 +33,11 @@
 | 3    | [CCTV_with_yolo_basic](ComputerVision/week3_yolo.md)  | [ynu09](https://github.com/ynu09)                            |
 | 4    | [Ready_to_ROS2](ROS2/week4.md)                        | [everyone]                                                   |
 | 4    | CCTV_with_yolo_advanced_YOLOv4_vs_YOLOv7              | [idingg](https://github.com/idingg)                          |
-| 5    | [ROS2&Topic_Programming](ROS2/week5_ROS2&Topic_Programming.md)                                | [Sangmin-Jeon](https://github.com/Sangmin-Jeon)              |
+| 5    | [ROS2&Topic_Programming](ROS2/week5_ROS2&Topic_Programming.md)                           | [Sangmin-Jeon](https://github.com/Sangmin-Jeon)              |
 | 5    | [Service_Programming](ROS2/week5_service.md)          | [pedrala](https://github.com/pedrala)                        |
 | 5    | [Action_Programming](ROS2/week5_Action_Programming.md)| [libero0077](https://github.com/libero0077)                  |
 | 6    | [ROS2_Test_Prep](ROS2/week6)                          | [everyone]                                                   |
-| 7    | [Kalman_Filter](ROS2/week7_.Kalman_Filter.md)         | [libero0077](https://github.com/libero0077)                  |
-| 7    | [Dijkstra&Heuristic(AStar)&JPS_Algorithm](ROS2/week7_aStar.md)                                | [pedrala](https://github.com/pedrala)                        |
-| 7    | [ROS2_Test_Prep](ROS2)                                | [Sangmin-Jeon](https://github.com/Sangmin-Jeon)              |
-| 7    | [ROS2_Test_Prep](ROS2)                                | [ynu09](https://github.com/ynu09)                            |
+| 7    | [Kalman_Filter](ROS2/RobotAI/week7_.Kalman_Filter.md) | [libero0077](https://github.com/libero0077)                  |
+| 7    | [Dijkstra&Heuristic(AStar)&JPS_Algorithm](ROS2/RobotAI/week7_aStar.md)                   | [pedrala](https://github.com/pedrala)                        |
+| 7    | [ROS2_Test_Prep](ROS2/RobotAI)                        | [Sangmin-Jeon](https://github.com/Sangmin-Jeon)              |
+| 7    | [ROS2_Test_Prep](ROS2/RobotAI)                        | [ynu09](https://github.com/ynu09)                            |

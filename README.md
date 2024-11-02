@@ -37,3 +37,7 @@
 | 5    | [Service_Programming](ROS2/week5_service.md)          | [pedrala](https://github.com/pedrala)                        |
 | 5    | [Action_Programming](ROS2/week5_Action_Programming.md)| [libero0077](https://github.com/libero0077)                  |
 | 6    | [ROS2_Test_Prep](ROS2/week6)                          | [everyone]                                                   |
+| 7    | [Kalman_Filter](ROS2/week7_.Kalman_Filter.md)         | [libero0077](https://github.com/libero0077)                  |
+| 7    | [Dijkstra&Heuristic(AStar)&JPS_Algorithm](ROS2/week7_aStar.md)                                | [pedrala](https://github.com/pedrala)                        |
+| 7    | [ROS2_Test_Prep](ROS2)                                | [Sangmin-Jeon](https://github.com/Sangmin-Jeon)              |
+| 7    | [ROS2_Test_Prep](ROS2)                                | [ynu09](https://github.com/ynu09)                            |

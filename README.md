@@ -39,5 +39,5 @@
 | 6    | [ROS2_Test_Prep](ROS2/week6)                          | [everyone]                                                   |
 | 7    | [Kalman_Filter](ROS2/RobotAI/week7_.Kalman_Filter.md) | [libero0077](https://github.com/libero0077)                  |
 | 7    | [Dijkstra&Heuristic(AStar)&JPS_Algorithm](ROS2/RobotAI/week7_aStar.md)                   | [pedrala](https://github.com/pedrala)                        |
-| 7    | [ROS2_Test_Prep](ROS2/RobotAI)                        | [Sangmin-Jeon](https://github.com/Sangmin-Jeon)              |
+| 7    | [DynamicProgramming](ROS2/RobotAI/week7_DynamicProgramming.md)                        | [Sangmin-Jeon](https://github.com/Sangmin-Jeon)              |
 | 7    | [ROS2_Test_Prep](ROS2/RobotAI)                        | [ynu09](https://github.com/ynu09)                            |

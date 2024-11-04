@@ -40,4 +40,4 @@
 | 7    | [KalmanFilter](RobotAI/week7_.KalmanFilter.md)                    | [libero0077](https://github.com/libero0077)                  |
 | 7    | [Dijkstra&Heuristic(AStar)&JPS_Algorithm](RobotAI/week7_AStar.md) | [pedrala](https://github.com/pedrala)                        |
 | 7    | [DynamicProgramming](RobotAI/week7_DynamicProgramming.md)         | [Sangmin-Jeon](https://github.com/Sangmin-Jeon)              |
-| 7    | [PID](RobotAI)                                                    | [ynu09](https://github.com/ynu09)                            |
+| 7    | [PID](RobotAI/PidControl.md)                                      | [ynu09](https://github.com/ynu09)                            |

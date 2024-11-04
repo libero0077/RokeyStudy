@@ -27,12 +27,12 @@
 
 | Week | Subject                                                           | Presenter                                                    |
 | ---- | ----------------------------------------------------------------- | ------------------------------------------------------------ |
-| 1    | [Sorting_recycling](ComputerVision/week1.md)                      | [libero0077](https://github.com/libero0077)                  |
-| 2    | [CCTV_with_ssd_basic](ComputerVision/week2.md)                    | [pedrala](https://github.com/pedrala)                        |
-| 3    | [CCTV_with_ssd_advanced](ComputerVision/week3_ssd.md)             | [Sangmin-Jeon](https://github.com/Sangmin-Jeon)              |
-| 3    | [CCTV_with_yolo_basic](ComputerVision/week3_yolo.md)              | [ynu09](https://github.com/ynu09)                            |
+| 1    | [SortingRecycling](ComputerVision/week1_SortingRecycling.md)      | [libero0077](https://github.com/libero0077)                  |
+| 2    | [CctvWithSsdBasic](ComputerVision/week2_CctvWithSsdBasic.md)      | [pedrala](https://github.com/pedrala)                        |
+| 3    | [CctvWithSsdAdvanced](ComputerVision/week3_CctvWithSsdAdvanced.md)| [Sangmin-Jeon](https://github.com/Sangmin-Jeon)              |
+| 3    | [CctvWithYoloBasic](ComputerVision/week3_CctvWithYoloBasic.md)    | [ynu09](https://github.com/ynu09)                            |
 | 4    | [ReadyToROS2](ROS2/week4.md)                                      | [everyone]                                                   |
-| 4    | CCTV_with_yolo_advanced_YOLOv4_vs_YOLOv7                          | [idingg](https://github.com/idingg)                          |
+| 4    | CctvWithYoloAdvanced&YOLOv4vsYOLOv7                               | [idingg](https://github.com/idingg)                          |
 | 5    | [ROS2&TopicProgramming](ROS2/week5_ROS2&TopicProgramming.md)      | [Sangmin-Jeon](https://github.com/Sangmin-Jeon)              |
 | 5    | [ServiceProgramming](ROS2/week5_ServiceProgramming.md)            | [pedrala](https://github.com/pedrala)                        |
 | 5    | [ActionProgramming](ROS2/week5_ActionProgramming.md)              | [libero0077](https://github.com/libero0077)                  |
